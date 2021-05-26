@@ -71,5 +71,3 @@ function Header() {
 }
 
 export default Header;
-
-// 1:13:00
