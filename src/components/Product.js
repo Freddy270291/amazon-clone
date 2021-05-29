@@ -1,6 +1,6 @@
-import { Image } from "next/image";
+import Image from "next/image";
 import { useState } from "react";
-import { StartIcon } from "@heroicons/react/solid";
+import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
 
 const MAX_RATING = 5;
@@ -24,14 +24,14 @@ function Product({ id, title, price, description, category, image }) {
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StartIcon className='h-5 text-yellow-500' />
+            <StarIcon className='h-5 text-yellow-500' />
           ))}
       </div>
 
       <p className='text-xs my-2 line-clamp-2'>{description}</p>
 
       <div className='mb-5'>
-        <Currency quantity={price} currency='EUR' />
+        <Currency quantity={price} currency='GBP' />
       </div>
 
       {hasPrime && (
